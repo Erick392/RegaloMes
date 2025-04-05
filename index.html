@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>heart</title>
+    <link rel="stylesheet" href="function-heart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <style>
+        canvas {
+            display: block;
+            margin: 0;
+        }
+        #textBelow {
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Lobster', cursive;
+            color: rgb(69, 11, 134);
+            margin-top: 30px;
+            position: relative; 
+        }
+        #textBelow.absolute {
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+        }
+        #additionalText {
+            text-align: center;
+            font-size: 50px;
+            font-family:'Lobster', cursive;
+            color: rgb(69, 11, 134);
+            margin-top: 20px;
+            position: relative;
+        }
+        #additionalText.absolute {
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #startButton {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px 20px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            background-color: #5f1a80;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #startButton:hover {
+            background-color: #ff4081;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <button id="startButton">Haz click ❤</button>
+    <div id="obal">
+        <canvas id="c"></canvas>
+        <script>
+            var b = document.body;
+            var c = document.getElementsByTagName('canvas')[0];
+            var a = c.getContext('2d');
+            document.body.clientWidth; 
+        </script>
+    </div>
+    <div id="textBelow" class="absolute">✨Gracias por aparecer en mi vida. Felices 7 meses a tu lado✨</div>
+    <div id="additionalText" class="absolute">¡Te amo mucho! 💝</div>
+    <script src="function-heart.js"></script>
+</body>
+</html>
